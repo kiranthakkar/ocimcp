@@ -1,0 +1,9 @@
+[project]
+name = "OCI MCP Server"
+version = "0.1.0"
+description = "This is MCP Server for OCI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "oci"
+]
