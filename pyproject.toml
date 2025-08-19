@@ -1,5 +1,5 @@
 [project]
-name = "OCI MCP Server"
+name = "oci-mcp-server"
 version = "0.1.0"
 description = "This is MCP Server for OCI"
 readme = "README.md"
