@@ -8,12 +8,10 @@ from fastmcp import FastMCP, Context
 from typing import Dict, List
 from starlette.requests import Request
 from starlette.responses import PlainTextResponse
-import oci
 from config.config_manager import ConfigManager
 from utils.oci_client_manager import OCIClientManager
 from utils.oci_utility import OCIUtility
 from resources import users
-import asyncio
 
 #Logging Configuration
 logging.basicConfig(level=logging.INFO)
@@ -82,7 +80,7 @@ def greet(name: str) -> str:
     return f"Hello, {name}!"
 
 if __name__ == "__main__":
-    mcp.run(transport="http", host="localhost", port=8000)
+    mcp.run("stdio")
 
 @mcp.custom_route("/health", methods=["GET"])
 async def health_check(request: Request) -> PlainTextResponse:

@@ -1,4 +1,3 @@
-import oci
 import base64
 
 class OCIUtility:

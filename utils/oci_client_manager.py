@@ -1,6 +1,5 @@
 import oci
 from config.config_manager import ConfigManager
-import base64
 import logging
 
 logging.basicConfig(level=logging.INFO)
