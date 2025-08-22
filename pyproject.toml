@@ -5,5 +5,6 @@ description = "This is MCP Server for OCI"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "oci"
+    "mcp[cli]>=1.13.0",
+    "oci",
 ]

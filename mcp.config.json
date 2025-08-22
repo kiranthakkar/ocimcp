@@ -1,0 +1,9 @@
+{
+    "mcpServers": {
+        "oci-service": {
+            "command": "python",
+            "args": ["server.py"],
+            "env": {}
+        }
+    }
+}

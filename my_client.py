@@ -9,4 +9,6 @@ async def call_users():
         print(f"Search users Result: {search_result}")
         get_result = await client.call_tool("get_user_by_id", {"user_id": "ocid1.user.oc1..aaaaaaaapdr7ehohhhvlplzhwp4xuu2et526gy3zjz62pofgpqalebefwb2q"})
         print(f"Get User Result: {get_result}")
+        search_user = await client.call_tool("get_user_by_name", {"user_name": "kiran.thakkar"})
+        print(f"Search User Result: {search_user}")
 asyncio.run(call_users())
