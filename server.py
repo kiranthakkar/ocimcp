@@ -4,8 +4,8 @@ This module is FastMCP server implementation for interacting with OCI IAM Domain
 """
 
 import logging
-import os
 from fastmcp import FastMCP, Context
+from fastmcp.client.transports import StreamableHttpTransport
 from typing import Dict, List, Any
 from starlette.requests import Request
 from starlette.responses import PlainTextResponse
@@ -129,7 +129,14 @@ def greet(name: str) -> str:
     return f"Hello, {name}!"
 
 if __name__ == "__main__":
-    mcp.run(transport="http", port=8000)
+    transport = StreamableHttpTransport(
+        host="localhost",
+        ssl=True,
+        port=443,
+        ssl_certfile="/Users/kgthakka/Downloads/agentdemo/ociiammcp/server.crt",
+        ssl_keyfile="/Users/kgthakka/Downloads/agentdemo/ociiammcp/server.key"
+    )
+    mcp.run(transport=transport)
     #mcp.run("stdio")
 
 @mcp.custom_route("/health", methods=["GET"])
