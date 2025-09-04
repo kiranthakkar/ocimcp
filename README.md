@@ -40,7 +40,6 @@ pip install -r requirements.txt
 
 **Configuration & Usage**
 
-```
 In the config folder, create a copy of config.ini.SAMPLE and edit the configuration file.
 
 Now you can run MCP server using the below command.
@@ -49,8 +48,15 @@ fastmcp run server.py --transport http --host $HOSTNAME --port $IPADDRESS
 To test MCP server using Interpreter, start Interpreter using the below command.
 fastmcp dev server.py
 
-To test MCP server with AI tool, setup RP and SSL frontend for the MCP server. Then you can add MCP server to AI tool.
-```
+![alt text](image.png)
+
+To test MCP server with AI tool, setup RP and SSL frontend for the MCP server. Then you can add MCP server to AI tool. For Claude, you can add MCP server as below.
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 
 💡 Feature Requests & Ideas
 Have an idea or suggestion? Open a feature request on GitHub!
