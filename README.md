@@ -38,7 +38,7 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-***Configuration & Usage**
+**Configuration & Usage**
 
 ```
 In the config folder, create a copy of config.ini.SAMPLE and edit the configuration file.
