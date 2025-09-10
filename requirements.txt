@@ -1,0 +1,6 @@
+fastmcp
+oci
+base64
+configparser
+logging
+
